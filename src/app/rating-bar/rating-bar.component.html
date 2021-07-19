@@ -1,0 +1,9 @@
+<h3>Rating bar</h3>
+<div *ngIf="currentRatingUnit!=0">{{currentRatingUnit}}</div>
+<button class="rate-unit" *ngFor="let ratingUnit of ratingUnits" (click)="changeCurrentRatingUnit(ratingUnit.value)"
+        [style.background-color]="ratingUnit.color">
+  {{ratingUnit.value}}
+</button>
+
+
+
